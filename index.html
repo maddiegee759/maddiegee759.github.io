@@ -1,10 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Website Trial</title>
-    </head>
-    <body>
-        <h1>Welcome to My Website</h1>
-        <p>This is a trial hosting a website via GitHub Pages.</p>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maddie Gee</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <script defer src="scripts/navbar.js"></script>
+    <script defer src="scripts/footer.js"></script>
+    <base target="_blank"> <!--new tab always-->
+</head>
+<body>
+    <div class="container">
+        <div class="grid-container">
+            <div>
+                <!--empty left-->
+            </div>
+            <div class="pfp-container">
+                <img src="assets/mgpfp.JPEG" alt="Maddie Gee" class="profile-pic">
+            </div>
+            <div>
+                <!--empty middle-->
+            </div>
+            <div class="grid-item">
+                <h1>Maddie Gee</h1>
+                <h4>COMPUTER SCIENCE STUDENT</h4>
+                <br>
+                <table>
+                    <tr>
+                        <td><a href="mailto:maddie.gee.759@gmail.com"><img src="assets/emailIcon.png" alt="Email Icon" class="icon"></a></td>
+                        <td><strong>Email:</strong> <a href="mailto:maddie.gee.759@gmail.com">maddie.gee.759@gmail.com</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.linkedin.com/in/maddie-gee-cs/"><img src="assets/linkedinIcon.png" alt="LinkedIn Icon" class="icon"></a></td>
+                        <td><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/maddie-gee-cs/">maddie-gee-cs</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/maddiegee759"><img src="assets/githubIcon.png" alt="GitHub Icon" class="icon"></a></td>
+                        <td><strong>GitHub:</strong> <a href="https://github.com/maddiegee759">maddiegee759</a></td>
+                    </tr>
+                </table>
+
+                <!-- # Source - https://stackoverflow.com/a/18676770-->
+                <br>
+                <button class="smallButton" onclick="window.open('example_pdf.pdf')"><p>Download CV</p></button>
+            </div>
+            <div>
+                <!--empty right-->
+            </div>
+        </div>
+    </div>
+
+    <!-- content-->
+    <div class="container2">
+        <h1 style="text-align: center">Hi there!</h1>
+        <div class="intro">
+            <p>A hardworking, motivated and personable student studying Computer Science at the University of Dundee, on track for First-Class Honours. Passion for technology, mathematics and innovation with experience across software development, programming, databases, web development and UX design. Completed a work experience placement at Workpro - gaining insight into software engineering, QA, technical support and business analysis. Seeking a year-long Computer Science placement to apply and further develop technical skills in a professional environment.</p>
+            <br>
+        </div>
+    </div>
+    
+
+    <!--
+    <div class="heading">
+        <h1>Education</h1>
+    </div>
+    <div class="container2">
+        <h3>University of Dundee 2025-2029</h3>
+        <h4>Computer Science BSc (Hons)</h4>
+        <p><strong>Key strengths</strong></p>
+        <ul style="list-style-type:none;">
+            <li>Programming & Software Development</li>
+            <li>Web Development</li>
+            <li>Computer Science Theory & Mathematics</li>
+            <li>UI/UX Design</li>
+            <li>Databases & Computer Systems</li>
+            <li>Algorithms & Problem-Solving</li>
+            <li>AI & Machine Learning</li>
+        </ul>
+
+        <p><strong>Leadership & Interests</strong></p>
+        <ul style="list-style-type:none;">
+            <li>Founder and Co-President ‘Women in STEM’ Society (2026/27)</li>
+            <li>Vice-Captain Karate (2026/27)</li>
+            <li>OpSoc, Tennis, Computing Society</li>
+        </ul>
+        <br>
+        <h3>Edinburgh College 2024-2025</h3>
+        <h4>HNC: Software Development</h4>
+        <p>Grade A</p>
+
+        <div class="center">
+            <button class="smallButton" onclick="window.open('education.html')"><p>Read more</p></button>
+        </div>
+    </div>
+
+    <div class="heading">
+        <h1>Portfolio</h1>
+    </div>
+    <div class="container2">
+        <div class="section">
+            <h3>InTheSea - Dating Website</h3>
+            <div class="text-img">
+                <a href="https://github.com/maddiegee759/InTheSeaDatingWebsite" target="_blank"><img src="./assets/its.png" alt="InTheSea Logo"></a>
+                <p>A full stack dating website developed as part of a four-person team. Built a responsive frontend and Flask backend, with integration of the StarLoveMatch API. This project demonstrates use of external APIs, server-side development and collaborative software development.</p>                                
+                <button class="tech-stack-mini"><p>HTML</p></button>
+                <button class="tech-stack-mini"><p>CSS</p></button>
+                <button class="tech-stack-mini"><p>JavaScript</p></button>
+                <button class="tech-stack-mini"><p>Flask</p></button>
+                <button class="tech-stack-mini"><p>Python</p></button>
+                <button class="tech-stack-mini"><p>StarLoveMatch API</p></button>
+            </div>
+            <div class="center">
+                <button class="smallButton" onclick="window.open('https://github.com/maddiegee759/InTheSeaDatingWebsite')"><img src="./assets/githubIconWhite.png" alt="GitHub Logo" class="icon">InTheSea</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <div>
+                <h3>Flight Path Optimisation using Dijkstra's Algorithm</h3>
+                <div class="text-img">
+                    <a href="https://github.com/maddiegee759/flightPathDijkstra" target="_blank"><img src="./assets/dijkstras.png" alt="Dijkstra's Algorithm Diagram"></a>
+                    <p>A C program that models flight routes as a graph and uses Dijkstra's algorithm to determine the most efficient path between destinations. This project demonstrates practical application of graph theory, algorithm design and computational efficiency.</p>
+                    <button class="tech-stack-mini"><p>C</p></button>
+                </div>
+            </div>
+            <div class="center">
+                <button class="smallButton" onclick="window.open('https://github.com/maddiegee759/flightPathDijkstra')"><img src="./assets/githubIconWhite.png" alt="GitHub Logo" class="icon">flightPathDijkstra</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <div>
+                <h3>Indago - Motivational Study App</h3>
+                <div class="text-img">
+                    <a href="https://www.figma.com/design/W0KWvjtggMyDrPI3pUkGVa/Design-Wireframes?node-id=105-416&t=jcu6RHz1TbH3QksI-0" target="_blank"><img src="./assets/indago.png" alt="Indago"></a>
+                    <p>High-fidelity prototype for a motivational, study app aimed at older students. Used evidence-based methods of gamification, including point systems, badges, and progress tracking to encourage user engagement. Atomic design was a consistent priority during the design process shown through the use of reusable components and a consistent styling.</p>
+                    <button class="tech-stack-mini"><p>Figma</p></button>
+                    <button class="tech-stack-mini"><p>Pix2d</p></button>
+                </div>
+            </div>
+            <div class="center">
+                <button class="smallButton" onclick="window.open('https://www.figma.com/design/wQqTHBS0kqMPsyXi7RCDRn/Indago--Copy-?node-id=105-416&t=sPdwGp07fZix3O9V-1')"><img src="./assets/figmaIcon.png" alt="Figma Logo" class="icon">Indago</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <div>
+                <h3>Games Like Wordle</h3>
+                <div class="text-img">
+                    <a href="https://maddiegee759.github.io/gamesLikeWordle.github.io/index.html" target="_blank"><img src="./assets/dice.png" alt="gamesLikeWordle"></a>
+                    <p>A simple website providing a single, convenient place to access a collection of browser-based games. Designed and developed an accessible interface and deployed the project as a live website for personal use and sharing. </p>
+                    <button class="tech-stack-mini"><p>HTML</p></button>
+                    <button class="tech-stack-mini"><p>CSS</p></button>
+                    <button class="tech-stack-mini"><p>JavaScript</p></button>
+                </div>
+            </div>
+            <div class="center">
+                <button class="smallButton" onclick="window.open('https://github.com/maddiegee759/gamesLikeWordle.github.io')"><img src="./assets/githubIconWhite.png" alt="GitHub Logo" class="icon">gamesLikeWordle</button>            
+                <button class="smallButton" onclick="window.open('https://gameslikewordle.co.uk')"><img src="./assets/web.png" alt="Web Icon" class="icon">gamesLikeWordle</button>            
+            </div>
+        </div>
+
+        <div class="center">
+            <button class="smallButton" onclick="window.open('portfolio.html')"><p>Read more</p></button>
+        </div>
+    </div>
+
+    <div class="heading">
+        <h1>Skills</h1>
+    </div>
+    <div class="container2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+        <div class="center">
+            <button class="smallButton" onclick="window.open('skills.html')"><p>Read more</p></button>
+        </div>
+    </div>
+    
+    <div class="heading">
+        <h1>Experience</h1>
+    </div>
+    <div class="container2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+        <div class="center">
+            <button class="smallButton" onclick="window.open('experience.html')"><p>Read more</p></button>
+        </div>
+    </div>
+    !-->
+</body>
 </html>
